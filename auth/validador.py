@@ -24,6 +24,7 @@ def verifica_usuario(username):
         return (False,username)
 
 
+# Funcion principal del modulo
 def ingreso_usuario(username):
     res=verifica_usuario(username)
     if res[0]:
