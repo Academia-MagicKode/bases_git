@@ -24,6 +24,9 @@ def verifica_usuario(username):
         return (False,username)
 
 
+def verficicacion_email():
+	return True
+
 def ingreso_usuario(username):
     res=verifica_usuario(username)
     if res[0]:
