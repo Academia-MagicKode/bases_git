@@ -16,6 +16,8 @@ def verifica_usuario(username):
         return (True,orig)
 
     while username in usarios:
+	if len(username)-len(orig) > 3:
+		username=username[:-3]
         username= username+agregar_numeros(3)
 
     else:
