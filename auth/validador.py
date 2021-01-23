@@ -27,6 +27,8 @@ def verifica_usuario(username):
 def verficicacion_email():
 	return True
 
+
+# Funcion principal del modulo
 def ingreso_usuario(username):
     res=verifica_usuario(username)
     if res[0]:
