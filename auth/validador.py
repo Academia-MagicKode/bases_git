@@ -1,5 +1,5 @@
 import random,string
-
+import rapid_email_validator as rv
 
 usarios=["mati7","mati","matt"]
 
@@ -27,6 +27,10 @@ def verifica_usuario(username):
 def verficicacion_email():
 	return True
 
+def verificacion_email_2(email):
+	if rv.verificar(email):
+		return True
+	else return False
 
 # Funcion principal del modulo
 def ingreso_usuario(username):
